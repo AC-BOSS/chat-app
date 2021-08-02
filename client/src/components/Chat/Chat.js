@@ -15,7 +15,7 @@ export default function Chat(props){
     const [users, setUsers] = useState([]);
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const ENDPOINT = 'localhost:5000'
+    const ENDPOINT = 'https://socketio-chat-app-amartya.herokuapp.com/'
 
     useEffect(() => {
         const {name, room} = queryString.parse(props.location.search);
